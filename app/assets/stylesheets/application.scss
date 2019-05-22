@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+
+ @import "font-awesome";
+
+ * {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+@font-face {
+    font-family: "myfont";
+    src: font-url("odstemplik.otf") format("opentype"), font-url("odstemplikBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-img {
+    background: image-url("img01.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top-text {
+    text-align: center;
+    padding: 250px 0;
+}
+
+.top-text h1 {
+    font-size: 100px;
+    font-family: "myfont";
+}
+
+nav h3 {
+    font-family: "myfont";
+}
+
+nav .fas, nav .far { 
+    color: #888;
+}
+
+.night-sky {
+    color: white;
+    background: image-url("fix-bg.jpg");
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.night-sky h2 {
+    font-family: "myfont";
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+.carousel-inner {
+    background-color: #333;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.service-list {
+    background-color: #333;
+    padding: 50px;
+}
+
+.service-list h2 {
+    text-align: center;
+    font-family: "myfont";
+    font-size: 80px;
+}
+
+.service-img {
+    width: 100%;
+}
+
+.service-description {
+    padding: 30px;
+}
+
+.info {
+    border: solid 2px white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.icon {
+    font-size: 100px;
+}
+
+footer {
+    background-color: #333;
+    padding: 30px;
+}
+
+footer p {
+  text-align: right;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #aaa;
+    font-size: 15px;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
